@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huella de Carbono Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #005f73;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #0a9396;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #005f73;
+    }
+    .result, .team-result {
+      margin-top: 20px;
+      background: #e0fbfc;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Huella de Carbono Digital</h1>
+  <div class="container">
+    <h2>¿Qué es la Huella de Carbono Digital?</h2>
+    <p>
+      La huella de carbono digital se refiere a las emisiones de gases de efecto invernadero
+que se generan a partir del uso de tecnologías de la información y la comunicación
+(TIC), especialmente en actividades relacionadas con internet. Esto incluye la
+contaminación que resulta de la infraestructura necesaria para soportar servicios
+digitales, como centros de datos y redes de telecomunicaciones. 
+    </p>
+<h2>Impacto ambiental</h2>
+<p>
+Se estima que la huella de carbono digital representa aproximadamente el 2% de las
+emisiones globales de gases de efecto invernadero. Esto abarca no solo el uso de
+dispositivos electrónicos, sino también la energía consumida por los servidores y
+otros componentes de la infraestructura digital. Por ejemplo, cada búsqueda en
+Google o el envío de un correo electrónico, aunque no generan contaminación
+directa, contribuyen a un impacto ambiental significativo debido a la energía
+requerida para procesar y almacenar esos datos. 
+<h2>Importancia </h2>
+La huella de carbono digital es un indicador fundamental para entender cómo nuestras
+actividades en línea afectan al medio ambiente. A medida que el uso de internet y las
+tecnologías digitales continúa creciendo, es fundamental ser conscientes de este
+impacto y buscar maneras de reducir nuestra huella de carbono digital.
+</p>
+
+    <p>
+      Nuestro equipo esta conformado por Rodriguez Martinez Ian Hazel, Nuñez Hernandez Yanitzan Gael, Casablanca Bárcenas Iyari, y Pérez Soto Lisette Abigail, y buscamos calcular y analizar la huella de carbono generada por nuestras actividades digitales.
+    </p>
+  </div>
+  
+  <div class="container">
+    <h2>Calcula tu Huella de Carbono</h2>
+    <label for="emailsWithoutAttachments">Correos sin adjuntos enviados por día:</label>
+    <input type="number" id="emailsWithoutAttachments" placeholder="Ejemplo: 20">
+
+    <label for="emailsWithAttachments">Correos con adjuntos (archivos o fotos) enviados por día:</label>
+    <input type="number" id="emailsWithAttachments" placeholder="Ejemplo: 5">
+
+    <label for="internetSearchesPerDay">Búsquedas en internet por día:</label>
+    <input type="number" id="internetSearchesPerDay" placeholder="Ejemplo: 50">
+
+    <label for="streamingMusicHours">Horas de streaming de música por semana:</label>
+    <input type="number" id="streamingMusicHours" placeholder="Ejemplo: 10">
+
+    <label for="socialMediaHours">Horas en redes sociales por día:</label>
+    <input type="number" id="socialMediaHours" placeholder="Ejemplo: 3">
+
+    <label for="cloudStorageGB">Gigabytes almacenados en la nube:</label>
+    <input type="number" id="cloudStorageGB" placeholder="Ejemplo: 5">
+
+    <label for="videoGamesHours">Horas de videojuegos en línea por semana:</label>
+    <input type="number" id="videoGamesHours" placeholder="Ejemplo: 8">
+
+    <label for="streamingHoursPerWeek">Horas de streaming de video por semana:</label>
+    <input type="number" id="streamingHoursPerWeek" placeholder="Ejemplo: 10">
+
+    <label for="videoConferencingHoursPerWeek">Horas de videoconferencias por semana:</label>
+    <input type="number" id="videoConferencingHoursPerWeek" placeholder="Ejemplo: 6">
+
+    <button id="calculateBtn">Calcular Huella de Carbono</button>
+    <div id="resultado" class="result" style="display:none;"></div>
+    <button id="saveResultBtn" style="display:none;">Guardar Resultado Individual</button>
+  </div>
+
+  <div class="team-result">
+    <h2>Resultados del Equipo</h2>
+    <button id="calculateTeamBtn" style="display:none;">Calcular Huella Total del Equipo</button>
+    <div id="teamResult" style="display:none;"></div>
+  </div>
+  <div class="container">
+  
+    <h2>Referencias Bibliográficas</h2>
+    <ul>
+      <li><a href="https://www.nueva-iso-14001.com/2022/07/claves-sobre-la-huella-de-carbono-digital-y-la-norma-iso-14001/" target="_blank">Nueva ISO 14001. (2022). Claves sobre la huella de carbono digital y la norma ISO 14001.</a></li>
+      <li><a href="https://negociosostenible.camaravalencia.com/social/tendencias/que-es-la-huella-de-carbono-digital/" target="_blank">Negocio Sostenible. (s.f.). ¿Qué es la huella de carbono digital?</a></li>
+      <li><a href="https://www.ismedioambiente.com/5-datos-sobre-la-huella-de-carbono-digital/" target="_blank">Is Medio Ambiente. (s.f.). 5 datos sobre la huella de carbono digital.</a></li>
+      <li><a href="https://dinahosting.com/blog/reduce-huella-de-carbono-digital/" target="_blank">Dinahosting. (2023). Reduce tu huella de carbono digital con estos 10 tips.</a></li>
+    </ul>
+  </div>
+
+  <script>
+    let teamResults = [];
+
+    function calcularHuella() {
+      const emailsWithoutAttachments = parseFloat(document.getElementById("emailsWithoutAttachments").value || 0);
+      const emailsWithAttachments = parseFloat(document.getElementById("emailsWithAttachments").value || 0);
+      const internetSearches = parseFloat(document.getElementById("internetSearchesPerDay").value || 0);
+      const streamingMusic = parseFloat(document.getElementById("streamingMusicHours").value || 0);
+      const socialMedia = parseFloat(document.getElementById("socialMediaHours").value || 0);
+      const cloudStorage = parseFloat(document.getElementById("cloudStorageGB").value || 0);
+      const videoGames = parseFloat(document.getElementById("videoGamesHours").value || 0);
+      const streamingHours = parseFloat(document.getElementById("streamingHoursPerWeek").value || 0);
+      const videoConferencingHours = parseFloat(document.getElementById("videoConferencingHoursPerWeek").value || 0);
+
+      const emissionsPerEmailWithoutAttachment = 4 / 1000; // kg CO2
+      const emissionsPerEmailWithAttachment = 50 / 1000; // kg CO2
+      const emissionsPerSearch = 0.02; // kg CO2
+      const emissionsPerStreamingMusicHour = 0.09; // kg CO2
+      const emissionsPerSocialMediaHour = 0.02; // kg CO2
+      const emissionsPerGBCloudStorage = 0.02; // kg CO2
+      const emissionsPerVideoGameHour = 0.25; // kg CO2
+      const emissionsPerStreamingHour = 0.36; // kg CO2
+      const emissionsPerVideoConferencingHour = 0.157; // kg CO2
+
+      const weeklyEmissions =
+        emailsWithoutAttachments * 7 * emissionsPerEmailWithoutAttachment +
+        emailsWithAttachments * 7 * emissionsPerEmailWithAttachment +
+        internetSearches * 7 * emissionsPerSearch +
+        streamingMusic * emissionsPerStreamingMusicHour +
+        socialMedia * 7 * emissionsPerSocialMediaHour +
+        cloudStorage * emissionsPerGBCloudStorage +
+        videoGames * emissionsPerVideoGameHour +
+        streamingHours * emissionsPerStreamingHour +
+        videoConferencingHours * emissionsPerVideoConferencingHour;
+
+      document.getElementById("resultado").style.display = "block";
+      document.getElementById("resultado").innerHTML = `
+        <h3>Tu Huella de Carbono</h3>
+        <p>🌱 Huella Semanal: ${weeklyEmissions.toFixed(2)} kg CO₂</p>
+      `;
+
+      document.getElementById("saveResultBtn").style.display = "block";
+    }
+
+    function guardarResultado() {
+      const resultText = parseFloat(document.getElementById("resultado").textContent.match(/[\d\.]+/)[0]);
+      teamResults.push(resultText * 52); // Convertir semanal a anual
+      alert("Resultado guardado.");
+      document.getElementById("calculateTeamBtn").style.display = "block";
+    }
+
+    function calcularHuellaEquipo() {
+      const totalTeamEmissions = teamResults.reduce((sum, emission) => sum + emission, 0);
+      document.getElementById("teamResult").style.display = "block";
+      document.getElementById("teamResult").innerHTML = `
+        <h3>Resultados del Equipo</h3>
+        <p>Integrantes: Rodriguez Martinez Ian Hazel, Nuñez Hernandez Yanitzan Gael, Casablanca Bárcenas Iyari, Pérez Soto Lisette Abigail</p>
+        <p> Grupo:502 </p>
+        <p>Huella Total del Equipo: ${totalTeamEmissions.toFixed(2)} kg CO₂/año</p>
+      `;
+    }
+
+    document.getElementById("calculateBtn").addEventListener("click", calcularHuella);
+    document.getElementById("saveResultBtn").addEventListener("click", guardarResultado);
+    document.getElementById("calculateTeamBtn").addEventListener("click", calcularHuellaEquipo);
+  </script>
+</body>
+</html>
